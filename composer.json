@@ -1,0 +1,23 @@
+{
+  "name": "rzhevsky/dumpObfuscator",
+  "description": "DB dump obfuscator",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mike Rzhevsky",
+      "email": "miker.ru@gmail.com"
+    }
+  ],
+  "require": {
+    "php" : "^7.2"
+  },
+  "autoload":{
+    "psr-4":{
+      "MikeR\\" : "src"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7"
+  }
+}
