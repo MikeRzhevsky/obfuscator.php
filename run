@@ -1,0 +1,13 @@
+#!/usr/bin/env php
+<?php
+
+use MikeR\App\Obfuscator;
+use MikeR\config;
+
+require __DIR__.'/vendor/autoload.php';
+
+$path_input_script  = __DIR__.'/src/public/example.dump.sql';
+$path_out_script    = __DIR__.'/src/public/output.sql';
+$path_config        = __DIR__.'/src/config/obfuscator.config.php';
+$obfuckator = new Obfuscator($path_input_script,$path_out_script,$path_config);
+$obfuckator->run();
